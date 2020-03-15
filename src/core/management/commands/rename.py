@@ -13,9 +13,8 @@ class Command(BaseCommand):
     def handle(self, *args, **kwargs):
         current_project_name = kwargs['current'][0]
         new_project_name = kwargs['new'][0]
-        print(current_project_name, new_project_name)
+        
         # logic for renaming the files
-
         files_to_rename = [
             # root folder
             f'../Procfile',

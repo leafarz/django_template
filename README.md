@@ -19,18 +19,9 @@ Django template project
     ```
     pip install -r requirements.txt
     ```
-
-## Renaming the project
-- In the src folder, input the following command:
-    ```
-    python manage.py rename django_template NEW_PROJECT_NAME
-    ```
-
-## Running
-### Local Deployment
-1) Create a .env file in django_template directory `(src/.env)`
-
-    a) Build Configuration
+4) Create a .env file in django_template directory `(src/.env)`
+   
+   a) Build Configuration
       - Add and set BUILD_CONFIG environment variable to dev or prod in .env file.
         ```
         BUILD_CONFIG=dev
@@ -40,6 +31,16 @@ Django template project
         ```
         SECRET_KEY=[secret_key_without_quotes]
         ```
+
+## Renaming the project
+- In the src folder, input the following command:
+    ```
+    python manage.py rename django_template NEW_PROJECT_NAME
+    ```
+
+## Running
+### Local Deployment
+
 2) Go to the src directory and configure migration
     ```
     cd src
