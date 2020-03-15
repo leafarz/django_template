@@ -20,7 +20,7 @@ Django template project
     pip install -r requirements.txt
     ```
 4) Create a .env file in django_template directory `(src/.env)`
-   
+
    a) Build Configuration
       - Add and set BUILD_CONFIG environment variable to dev or prod in .env file.
         ```
@@ -40,24 +40,22 @@ Django template project
 
 ## Running
 ### Local Deployment
-
-2) Go to the src directory and configure migration
+1) Go to the src directory and configure migration
     ```
     cd src
     python manage.py makemigrations
     python manage.py migrate
     ```
 
-3) Run the server:
+2) Run the server:
     ```
     python manage.py runserver
     ```
 
 ## Deployment
 ### Heroku
-   1) Create a Heroku app
-   2) Make sure to set environment variables
-   3) Upload
+   1) Create a Heroku app and ake sure to set environment variables
+   2) Upload
       - Project should be readily configured for deployment
 
 ## Tools used
